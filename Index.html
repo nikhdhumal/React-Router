@@ -47,13 +47,11 @@
     }
   </style>
 </head>
-  
+
 <body>
-  
-  <div id="container">
-  
-  </div>
-  
+
+  <div id="container"></div>
+
   <script type="text/babel">
     var { Router, Route, IndexRoute, IndexLink, hashHistory, Link } = ReactRouter;
 
@@ -108,7 +106,7 @@
       }
     });
     var destination = document.querySelector("#container");
-  
+
     ReactDOM.render(
       <Router history={hashHistory}>
       <Route path="/" component={App}>
@@ -121,5 +119,5 @@
     );
   </script>
 </body>
-  
+
 </html>
